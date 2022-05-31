@@ -3,7 +3,7 @@ class WordsController < ApplicationController
 
   # GET /words or /words.json
   def index
-    @words = Word.all
+    @words = Word.order(chinese: :desc).page(params[:page])
   end
 
   # GET /words/1 or /words/1.json
@@ -67,4 +67,6 @@ class WordsController < ApplicationController
     def word_params
       params.fetch(:word, {})
     end
+
+
 end
