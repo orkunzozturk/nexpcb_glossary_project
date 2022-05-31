@@ -1,1 +1,18 @@
 @import "base";
+.sort {
+  position: absolute;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.bi-arrow-up-short {
+  top: -6px;
+  border-top: 8px solid #fff;
+}
+
+.bi-arrow-down-short {
+  border-bottom: 8px solid #fff;
+}

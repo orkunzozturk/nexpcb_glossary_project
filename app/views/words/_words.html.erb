@@ -1,38 +1,35 @@
 <div id="words">
   <table class="table table-striped table-hover">
-    <thead>
+    <thead class="bg-gray-800">
       <tr>
         <th
-        id="words-chinese"
-        class="text-left py-3"
-        data-reflex="click->Table#sort"
-        data-column="chinese"
-        data-direction="asc"
-      >
-        <span>Chinese</span>
-      </th>
-      <th
-        id="words-english"
-        class="text-left py-3"
-        data-reflex="click->Table#sort"
-        data-column="english"
-        data-direction="asc"
-      >
-        <span>English</span>
-      </th>
-        <%# <th colspan="3"></th> %>
+          id="words-chinese"
+          class="text-left py-3"
+          data-reflex="click->Table#sort"
+          data-column="pinyin"
+          data-direction="ASC"
+        >
+          <span>Chinese</span>
+        </th>
+        <th
+          id="words-english"
+          class="text-left py-3 px-6"
+          data-reflex="click->Table#sort"
+          data-column="english"
+          data-direction="ASC"
+        >
+          <span>English</span>
+        </th>
       </tr>
     </thead>
 
-    <tbody>
-      <% @words.each do |word| %>
+    <tbody class="">
+      <% words.each do |word| %>
         <tr>
-          <td><%= word.chinese %></td>
+          <td class="text-left py-3 px-6"><%= word.chinese %></td>
           <td class="copy" role="button" data-clipboard-text="<%= word.english%>"> <%= word.english %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-  <%= page_entries_info @words %>
-  <%= paginate @words %>
 </div>

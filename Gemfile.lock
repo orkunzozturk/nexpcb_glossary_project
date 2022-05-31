@@ -228,6 +228,9 @@ GEM
       uber (< 0.2.0)
     retriable (3.1.2)
     rexml (3.2.5)
+    rmmseg-cpp-new (0.3.1)
+    ruby-pinyin (0.5.0)
+      rmmseg-cpp-new (~> 0.3.1)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
@@ -309,12 +312,12 @@ DEPENDENCIES
   clipboard-rails
   google_drive
   jbuilder (~> 2.7)
-  kaminari
   listen (~> 3.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.6)
   redis (~> 4.0)
+  ruby-pinyin
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   spring

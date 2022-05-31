@@ -6,10 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'ruby-pinyin'
 
 
 Word.destroy_all
 
 WORKSHEET.rows.each do |row|
-  Word.create(created_at: row[0], chinese: row[1], english: row[2])
+  Word.create(created_at: row[0], chinese: row[1], english: row[2], pinyin: PinYin.permlink(row[1]))
 end
