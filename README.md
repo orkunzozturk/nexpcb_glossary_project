@@ -1,24 +1,9 @@
-# README
+Please get in touch with me for Google Service Account API key (it should be saved as an ENV variable)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run:
+bundle install
+rails db:new
+rails db:migrate
+rails server
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(You might have to enable rails cache for Reflex Websocket)
