@@ -4,6 +4,7 @@ Run:
 bundle install  
 rails db:new  
 rails db:migrate  
+rails db:seed  
 rails server  
 
 (You might have to enable rails cache for Reflex Websocket)
