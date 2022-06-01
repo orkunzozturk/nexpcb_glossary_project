@@ -2,8 +2,8 @@ Please get in touch with me for Google Service Account API key (it should be sav
 
 Run:
 bundle install  
-rails db:new
-rails db:migrate
-rails server
+rails db:new  
+rails db:migrate  
+rails server  
 
 (You might have to enable rails cache for Reflex Websocket)
