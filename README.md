@@ -1,7 +1,7 @@
 Please get in touch with me for Google Service Account API key (it should be saved as an ENV variable)
 
 Run:
-bundle install
+bundle install  
 rails db:new
 rails db:migrate
 rails server
